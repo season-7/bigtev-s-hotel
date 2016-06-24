@@ -1,2 +1,2 @@
 # BigTevs Hotel
-Website for BigTevs Hotel - Mombasa.
+Website for BigTevs Hotel
