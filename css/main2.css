@@ -383,9 +383,7 @@ Content Section
         width: 100%;
         position: relative;
         height: 550px;
-        border-top: 5px solid #110033 !important;
-                border-bottom: 5px solid #110033 !important;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
 }
 
 @media only screen and (min-width: 1068px) {
@@ -426,16 +424,34 @@ Content Section
         }
 }
 
-.padding {
-        padding: 0px 200px;
+@media only screen and (min-width: 1180px) {
+        .padding {
+                padding: 20px 200px;
+        }
+}
+
+@media only screen and (min-width: 980px) {
+        .padding {
+                padding: 20px 100px;
+        }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+        .padding {
+                padding: 20px 25px;
+        }
 }
 
 .teasers {
-        margin-top: 10px;
+        margin-top: 0px;
         margin-bottom: 10px;
+        border-top: 5px solid #110033 !important;
+        border-bottom: 5px solid #110033 !important;
+        background: #fff;
 }
 
 .reservations, .gallery, .offers {
+        min-height: 260px;
         height: 260px;
         padding: 10px;
 }
@@ -469,17 +485,52 @@ Content Section
 
 .desc {
         width: 90%;
-        border: 1px solid #fff;
+        border: 1px solid #3584B5;
         border-radius: 5px;
         margin: auto;
-        margin-top: 10px;
+        margin-top: 8px;
         line-height: 26px;
-        font-size: 17px;
+        font-size: 16px !important;
         color: #110033;
+        padding: 5px;
 }
 
 .desc p{
         color: #110033;
+}
+
+@media only screen and (min-width: 980px) {
+        .padding {
+                padding: 20px 100px;
+        }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+         .desc {
+                width: 90%;
+                border: 1px solid #3584B5;
+                border-radius: 5px;
+                margin: auto;
+                margin-top: 8px;
+                line-height: 26px;
+                font-size: 13px !important;
+                color: #110033;
+                padding: 5px;
+        }
+}
+
+@media only screen and (max-width: 380px) {
+         .desc {
+                width: 90%;
+                border: 1px solid #3584B5;
+                border-radius: 5px;
+                margin: auto;
+                margin-top: 8px;
+                line-height: 26px;
+                font-size: 13px !important;
+                color: #110033;
+                padding: 5px;
+        }
 }
 
 /*...................................................................................................................................
@@ -490,7 +541,6 @@ Footer Section
 
 #footer {
         height: 0px;
-        background: #eee;
 }
 
 html, body {
