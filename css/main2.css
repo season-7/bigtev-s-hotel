@@ -193,6 +193,11 @@ Header Section
                 text-align: left;
                 font-weight: bolder;
                 color: #eee;
+                padding-left: 50px;
+        }
+        
+        .header-nav {
+                padding-right: 50px;
         }
         
         .header-nav .buttons {
@@ -558,6 +563,15 @@ Content Section
 
 .picture {
         height: 280px;
+        text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+        .picture {
+                height: 280px;
+                text-align: center;
+                margin-bottom: 20px;
+        }
 }
 
 .bio {
@@ -569,12 +583,16 @@ Content Section
         height: auto;
         min-height: 200px;
         max-height: 280px;
+        margin: auto;
+        max-width: 280px;
+        min-width: 200px;
         width: 100%;
         object-fit: fill;
         border-radius: 50%;
         border: 2px solid #110033;
         padding: 5px;
 }
+
 /*...................................................................................................................................
 
 Footer Section
@@ -586,30 +604,60 @@ Footer Section
         border-top: 5px solid #110033 !important;
         width: 100%;
         background: #3584B5;
+        color: #fff;
 }
 
-html, body {
-                                height: 100%;
-                                margin: 0;
-                                padding: 0;
-                        }
-                        
-                        .wrapper {
-                                display: table;
-                                width: 100%;
-                                min-height: 100%;
-                        }
-                        
-                        .header, .content, .footer {
-                                display: table-row;
-                        }
-                        
-                        .content {
-                                background: blue;
-                        }
-                        
-                        .header, .footer {
-                                height: 100px;
-                                background: #eee;
-                        }
-                        
+.contacts {
+        text-align: center;
+        line-height: 30px;
+}
+
+.twitter, .phone, .facebook, .email {
+        text-align: center !important;
+}
+.contacts .col-3{
+        text-align: center !important;
+        display: inline-block;
+}
+
+.contacts .col-3 span {
+        display: inline-block;
+        float: left;
+        text-align: center;
+}
+
+.contacts .col-3 img{
+        margin: 0px;
+        width: 30px;
+        margin: 0 20px;
+}
+
+.icons-only {
+        display: none;
+}
+
+@media only screen and (max-width: 768px) {
+         .icons-only {
+                display: block;
+                text-align: right;
+        }
+        
+        .icons-only img{
+                margin: 0 8px;
+        }
+        
+        .icons-only p{
+                display: none;
+        }
+        
+        .contacts .col-3{
+                display: none;
+        }
+}
+
+@media only screen and (max-width: 480px) {
+        .icons-only {
+                display: block;
+                text-align: center;
+        }
+}
