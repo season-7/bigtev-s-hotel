@@ -1,0 +1,520 @@
+@import url(https://fonts.googleapis.com/css?family=ABeeZee);
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two);
+
+html, body {
+        background: #3584B5;
+        height: 100%;
+        width: 100%;
+        margin:0;
+	padding:0;
+        font-family: 'ABeeZee', sans-serif;
+}
+
+p, h1, h2, h3, h4, h5, h6, ul, li, a {
+        padding: 0;
+        margin: 0;
+        color: #ecf0f1;
+}
+
+a {
+        text-decoration: none;
+}
+ul {
+        list-style: none;
+}
+
+*,
+*:before,
+*:after {
+        -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                        box-sizing: border-box;
+}
+
+.row::after {
+        content: "";
+        clear: both;
+        display: block;
+}
+
+[class*="col-"] {
+        float: left;
+        padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+        width: 100%;
+        height: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+        /* For tablets: */
+        .col-m-1 {width: 8.33%;}
+        .col-m-2 {width: 16.66%;}
+        .col-m-3 {width: 25%;}
+        .col-m-4 {width: 33.33%;}
+        .col-m-5 {width: 41.66%;}
+        .col-m-6 {width: 50%;}
+        .col-m-7 {width: 58.33%;}
+        .col-m-8 {width: 66.66%;}
+        .col-m-9 {width: 75%;}
+        .col-m-10 {width: 83.33%;}
+        .col-m-11 {width: 91.66%;}
+        .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .col-1 {
+                width: 8.33%;
+        }
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+}
+
+#container {
+	display: table;
+        width: 100%;
+        min-height: 100%;
+}
+
+#header, #content, #footer {
+        display: table-row;
+}
+
+
+/*...................................................................................................................................
+
+Header Section
+
+...................................................................................................................................*/
+
+#header {
+	width:100%;
+	height:200px;
+        color: #fff;
+}
+
+.header-container {
+        position: relative;
+        height:100%;
+}
+
+.header-nav {
+        background: transparent;
+        height: 100%;
+        padding-top: 65px;
+}
+
+.show-nav {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 60px;
+        height: 100%;
+        text-align: center;
+        line-height: 50%;
+        z-index: 1;
+        background: transparent;
+}
+
+.show-nav i {
+        height: 50%;
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 7%;
+        margin:  25% 0;
+        cursor: pointer;
+}
+
+.header-nav nav {
+        position: relative;
+        display: inline-block;
+        float: right;
+}
+
+.header-nav nav ul{
+        display: inline-block;
+        float: right;
+}
+
+
+.header-nav nav li{
+        display: inline-block;
+}
+
+.header-nav nav li:hover, .header-nav nav li:active, .header-nav nav li:focus{
+        text-decoration: none;
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        background: transparent;
+}
+
+.header-nav nav li:hover a, .header-nav nav li:active a, .header-nav nav li:focus a{
+        color: #3584B5;
+}
+
+.header-nav nav li.active{
+        background: transparent;
+        border-radius: 5px 5px 0 0;
+        text-decoration: none;
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+}
+
+@media only screen and (min-width: 1180px) {
+        .logo {
+                height: 100%;
+                font-family: 'Lobster Two', cursive;
+                font-size: 90px;
+                line-height: 150px;
+                text-align: left;
+                font-weight: bolder;
+                color: #110033;
+        }
+        
+        .header-nav .buttons {
+                border-radius: 5px;
+                color: white;
+                cursor:pointer;
+                border: 1px solid #fff;
+                padding: 10px 20px;
+                margin: 5px;
+                width: 130px;
+                text-align: center;
+                cursor: pointer;
+        }     
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+        #header {
+                position:relative;
+                width:100%;
+                height:100px !important;
+                color: #fff;
+        }
+        
+        .logo {
+                height: 100%;
+                font-family: 'Lobster Two', cursive;
+                font-size: 60px;
+                line-height: 70px;
+                text-align: center;
+                font-weight: bolder;
+        }
+        
+        .header-nav {
+                background: transparent;
+                height: 100%;
+                padding-top: 30px;
+        }
+        
+        .header-nav .buttons {
+                border-radius: 0px;
+                color: white;
+                cursor:pointer;
+                padding: 10px 10px;
+                margin: 0px;
+                width: auto;
+                min-width: 100px;
+                text-align: center;
+                cursor: pointer;
+                font-size: 13px;
+        }
+        
+        .header-nav .buttons {
+                border-left: 1px solid rgba(255, 255, 255, 0.3);
+                border-right: 1px solid rgba(0, 0, 0, 0.4);
+        }
+        
+        .header-nav .buttons:first-child {
+                border-left: 0px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .header-nav .buttons:last-child {
+                border-right: 0px solid rgba(0, 0, 0, 0.5);
+        }
+}
+
+@media only screen and (max-width: 768px) {
+        #header {
+                position:relative;
+                width:100%;
+                height:70px !important;
+                color: #fff;
+        }
+        
+        .logo {
+                height: 100%;
+                font-family: 'Lobster Two', cursive;
+                font-size: 50px;
+                line-height: 35px;
+                text-align: left;
+                font-weight: bolder;
+        }
+        
+        .header-nav .buttons {
+                border: none;
+                padding: 10px;
+                width: 100%;
+                text-align: left;
+                border-top: 1px solid rgba(255, 255, 255, 0.2);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+        }
+        
+        .show-nav {
+                display: block;
+                z-index: 1;
+        }
+
+        .header-nav {
+                display: none;
+                width: 250px;
+                position: absolute;
+                height: auto;
+                padding: 0;
+                top: 100%;
+                right: 0;
+                z-index: 1;
+                border-top: 5px solid #F89F3D;
+        }
+        
+        .header-nav nav{
+                margin: 0;
+                width: 100%;
+        }
+        
+        .header-nav nav ul{
+                display: block !important;
+                width: 100%;
+                background: #110033;
+        }
+        
+        .header-nav nav li{
+                display: block;
+        }
+        
+        .header-nav nav li:first-child {
+                border-top: 0px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .header-nav nav li:last-child {
+                border-bottom: 0px solid rgba(0, 0, 0, 0.5);
+        }
+}
+
+@media only screen and (max-width: 350px) {
+        .header {
+                height: 60px !important;
+        }
+        
+        .logo {
+                height: 100%;
+                font-family: 'Poiret One', cursive !important;
+                font-size: 25px;
+                line-height: 30px;
+                text-align: left;
+                font-weight: bolder;
+                border-right: 0px solid #F89F3D;
+        }
+        
+        .header-nav nav ul{
+                display: block !important;
+                width: 200px;
+                background: #110033;
+        }
+        
+        .header-nav nav li{
+                display: block;
+                width: 100%;
+                text-align: left;
+                border-top: 1px solid rgba(255, 255, 255, 0.2);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+        }
+        
+        .header-nav .buttons {
+                display: block !important;
+                width: 100% !important;
+                text-align: left;
+                border-top: 1px solid rgba(255, 255, 255, 0.2);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+                border-radius: 0px !important;
+                
+        }
+        
+        .header-nav nav li:first-child {
+                border-top: 0px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .header-nav nav li:last-child {
+                border-bottom: 0px solid rgba(0, 0, 0, 0.5);
+        }
+}
+
+/*...................................................................................................................................
+
+Content Section
+
+...................................................................................................................................*/
+
+#content-wrapper {
+        min-height: 100%;
+}
+
+#content {
+        min-height: 100%;
+        overflow: auto;
+}
+
+.mainimage {
+        width: 100%;
+        position: relative;
+        height: 550px;
+        border-top: 5px solid #110033 !important;
+                border-bottom: 5px solid #110033 !important;
+        margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 1068px) {
+        .mainimage img{
+                height: auto;
+                min-height: 200px;
+                max-height: 550px;
+                width: 100%;
+                object-fit: cover;
+        }
+}
+
+@media only screen and (max-width: 1067px) {
+        .mainimage {
+                max-height: 360px;
+                height: 360px;
+        }
+        .mainimage img{
+                height: auto;
+                max-height: 360px;
+                min-height: 360px;
+                width: 100%;
+                object-fit: cover;
+        }
+}
+
+@media only screen and (max-width: 700px) {
+        .mainimage {
+                max-height: 220px;
+                height: 220px;
+        }
+        .mainimage img{
+                height: auto;
+                max-height: 220px;
+                min-height: 220px;
+                width: 100%;
+                object-fit: cover;
+        }
+}
+
+.padding {
+        padding: 0px 200px;
+}
+
+.teasers {
+        margin-top: 10px;
+        margin-bottom: 10px;
+}
+
+.reservations, .gallery, .offers {
+        height: 260px;
+        padding: 10px;
+}
+
+.teaser {
+        height: 100%;
+        width: 100%;
+        border: 1px solid #110033;
+        border-radius: 5px;
+        text-align: center;
+}
+
+.teaser h4{
+        background: #110033;
+        padding: 10px;
+        text-align: center;
+}
+
+.teaser .image {
+        height: 120px;
+        width: 220px;
+        border-radius: 50px;
+        border: 0px solid;
+        margin:  0 auto;
+}
+
+.teaser .image img{
+        height: 120px;
+        width: 100%;
+}
+
+.desc {
+        width: 90%;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        margin: auto;
+        margin-top: 10px;
+        line-height: 26px;
+        font-size: 17px;
+        color: #110033;
+}
+
+.desc p{
+        color: #110033;
+}
+
+/*...................................................................................................................................
+
+Footer Section
+
+...................................................................................................................................*/
+
+#footer {
+        height: 0px;
+        background: #eee;
+}
+
+html, body {
+                                height: 100%;
+                                margin: 0;
+                                padding: 0;
+                        }
+                        
+                        .wrapper {
+                                display: table;
+                                width: 100%;
+                                min-height: 100%;
+                        }
+                        
+                        .header, .content, .footer {
+                                display: table-row;
+                        }
+                        
+                        .content {
+                                background: blue;
+                        }
+                        
+                        .header, .footer {
+                                height: 100px;
+                                background: #eee;
+                        }
+                        
