@@ -192,7 +192,7 @@ Header Section
                 line-height: 150px;
                 text-align: left;
                 font-weight: bolder;
-                color: #fff;
+                color: #eee;
         }
         
         .header-nav .buttons {
@@ -415,8 +415,8 @@ Content Section
         }
         .mainimage img{
                 height: auto;
-                max-height: 360px;
-                min-height: 360px;
+                max-height: 350px;
+                min-height: 350px;
                 width: 100%;
                 object-fit: cover;
         }
@@ -429,8 +429,8 @@ Content Section
         }
         .mainimage img{
                 height: auto;
-                max-height: 220px;
-                min-height: 220px;
+                max-height: 210px;
+                min-height: 210px;
                 width: 100%;
                 object-fit: cover;
         }
@@ -544,6 +544,37 @@ Content Section
         }
 }
 
+.about {
+        height: auto;
+        width: 100%;
+        background: #fff;
+        color: #110033;
+        margin-bottom: 20px;
+}
+
+.about p, .about h3{
+        color: #110033;
+}
+
+.picture {
+        height: 280px;
+}
+
+.bio {
+        background: #3584B5;
+        line-height: 30px;
+}
+
+.picture img{
+        height: auto;
+        min-height: 200px;
+        max-height: 280px;
+        width: 100%;
+        object-fit: fill;
+        border-radius: 50%;
+        border: 2px solid #110033;
+        padding: 5px;
+}
 /*...................................................................................................................................
 
 Footer Section
