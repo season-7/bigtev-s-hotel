@@ -661,3 +661,53 @@ Footer Section
                 text-align: center;
         }
 }
+
+/*...................................................................................................................................
+
+Gallery Page
+
+...................................................................................................................................*/
+
+.responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+}
+
+.responsive .img {
+        border: 1px solid #ccc;
+}
+
+.responsive .img:hover {
+        border: 1px solid #777;
+}
+
+.responsive .img img {
+        width: 100%;
+        height: auto;
+}
+
+.responsive .desc {
+        padding: 15px;
+        text-align: center;
+}
+
+
+@media only screen and (max-width: 700px){
+        .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+        }
+}
+
+@media only screen and (max-width: 500px){
+        .responsive {
+                width: 100%;
+        }
+}
+
+.clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+}
