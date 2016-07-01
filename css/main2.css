@@ -667,6 +667,16 @@ Footer Section
 Gallery Page
 
 ...................................................................................................................................*/
+.gallery {
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+}
+
+.gallery .facilities {
+        padding-bottom: 20px !important;
+        margin-top: 20px;
+}
 
 .responsive {
         padding: 0 6px;
@@ -675,7 +685,7 @@ Gallery Page
 }
 
 .responsive .img {
-        border: 1px solid #ccc;
+        border: 2px solid #ccc;
 }
 
 .responsive .img:hover {
@@ -684,11 +694,14 @@ Gallery Page
 
 .responsive .img img {
         width: 100%;
-        height: auto;
+        height: 200px;
 }
 
 .responsive .desc {
         padding: 15px;
+        text-align: center;
+        margin-bottom: 10px;
+        color: #fff;
         text-align: center;
 }
 
@@ -706,8 +719,6 @@ Gallery Page
         }
 }
 
-.clearfix:after {
-        content: "";
-        display: table;
+.clearfix{
         clear: both;
 }
